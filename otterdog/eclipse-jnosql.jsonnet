@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-jnosql') {
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "write",
     },
   },
   _repositories+:: [
@@ -19,8 +18,6 @@ orgs.newOrg('eclipse-jnosql') {
       has_discussions: true,
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "database",
         "flexible",
@@ -30,9 +27,6 @@ orgs.newOrg('eclipse-jnosql') {
         "nosql-databases"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
     },
     orgs.newRepo('jnosql-databases') {
       allow_merge_commit: true,
@@ -44,8 +38,6 @@ orgs.newOrg('eclipse-jnosql') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://www.jnosql.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jakartaee",
         "java",
@@ -55,9 +47,6 @@ orgs.newOrg('eclipse-jnosql') {
         "nosql-databases"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
     },
     orgs.newRepo('jnosql-extensions') {
       allow_merge_commit: true,
@@ -69,8 +58,6 @@ orgs.newOrg('eclipse-jnosql') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://www.jnosql.org/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jakartaee",
         "java",
@@ -78,9 +65,6 @@ orgs.newOrg('eclipse-jnosql') {
         "microprofile"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
     },
   ],
 }
