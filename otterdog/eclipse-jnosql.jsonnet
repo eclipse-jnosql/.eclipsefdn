@@ -16,7 +16,7 @@ orgs.newOrg('technology.jnosql', 'eclipse-jnosql') {
       dependabot_security_updates_enabled: true,
       description: "Eclipse JNoSQL is a framework which has the goal to help Java developers to create Jakarta EE applications with NoSQL.",
       has_discussions: true,
-      has_wiki: false,
+      has_wiki: true,
       homepage: "",
       topics+: [
         "database",
@@ -65,6 +65,58 @@ orgs.newOrg('technology.jnosql', 'eclipse-jnosql') {
         "microprofile"
       ],
       web_commit_signoff_required: false,
+    },
+    orgs.newRepo('jnosql-artemis') {
+      archived: true,
+      default_branch: "master",
+      description: "Eclipse JNoSQL Artemis is a flexible and extensible OxM to connect NoSQL databases. It brings an easy interface to support key-value, column family, document-oriented and graph databases with heavy driven annotation using CDI.",
+      has_issues: false,
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://www.jnosql.org/",
+      topics+: [
+        "connect-nosql-databases",
+        "cdi",
+        "diana",
+        "jnosql",
+        "nosql",
+        "artemis",
+      ],
+    },
+    orgs.newRepo('jnosql-parent') {
+      archived: true,
+      default_branch: "master",
+      description: "",
+      has_issues: false,
+      has_projects: false,
+      has_wiki: false,
+      homepage: "https://www.jnosql.org/",
+      topics+: [
+        "artemis",
+        "cdi",
+        "diana",
+        "communication-layer",
+        "nosql-databases"
+      ],
+    },
+    
+    orgs.newRepo('jnosql-aphrodite') {
+      archived: true,
+      default_branch: "master",
+      description: "Eclipse JNoSQL Aphrodite is the project that contains the syntax query to JNoSQL API.",
+      has_issues: false,
+      has_projects: true,
+      has_wiki: true,
+      homepage: "https://www.jnosql.org/",
+      topics+: [
+        "jnosql",
+        "jnosql-aphrodite",
+        "javaee",
+        "jakartaee",
+        "jsr",
+        "nsq",
+        "java"
+      ],
     },
   ],
 } + {
