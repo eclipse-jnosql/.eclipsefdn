@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('technology.jnosql', 'eclipse-jnosql') {
+orgs.newOrg('ee4j.jnosql', 'eclipse-jnosql') {
   settings+: {
     description: "",
     web_commit_signoff_required: false,
